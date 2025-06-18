@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Formulário - Landing Page</title>
-    <!-- CSS EXTERNO -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
@@ -185,6 +184,7 @@
             display: flex;
             justify-content: center;
             gap: 15px;
+            align-items: center;
         }
 
         .social-link {
@@ -205,6 +205,33 @@
             color: white;
             transform: translateY(-5px) scale(1.1);
         }
+
+        .phone-btn {
+            background: rgba(255,255,255,0.4);
+            color: #0051ff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        .phone-btn {
+            background: rgba(255,255,255,0.4);
+            color: #0051ff;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 10px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .phone-btn:hover {
+            background: #0051ff;
+            color: white;
+        }
+        
     </style>
 </head>
 <body>
@@ -257,7 +284,7 @@
     <footer class="footer">
         <div class="social-links">
             <a href="https://www.instagram.com/tac_argenliam/" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <!--AQUI-->
+            <button class="phone-btn" onclick="copyPhone()">(81) 98369-9051</button>
         </div>
     </footer>
 
@@ -306,6 +333,10 @@
                 }, 2000);
             }
         });
+
+        function copyPhone() {
+            navigator.clipboard.writeText('(81) 98369-9051');
+        }
     </script>
 </body>
 </html>
