@@ -238,18 +238,18 @@
     <header id="header">
         <div class="logo-container">
             <img id="logo" src="logo.png" alt="Logo">
-            <span class="logo-text">TAC</span>
+            <span class="logo-text">TAC.Argeliam</span>
         </div>
     </header>
 
     <div class="content">
         <section class="hero">
-            <h2>🚀 Transforme Sua <span style="color: #0051ff;">Ideia</span> em Realidade</h2>
-            <p>Nossa equipe está pronta para ajudar você a alcançar seus objetivos com soluções de designs e websites voltado para o uso prórpio.</p>
+            <h2>&#x1F427;Transforme Sua <span style="color: #0051ff;">Ideia</span> em Realidade!</h2>
+            <p>Nossa equipe está pronta para ajudar você a alcançar seus objetivos, com soluções de designs e websites voltado para o uso prórpio ou empresarial.</p>
             <div class="tags">
                 <span class="tag">🎯 Para todos</span>
                 <span class="tag">✨ Designs Digitais</span>
-                <span class="tag">🚀 Websites</span>
+                <span class="tag">&#x1F427; Websites</span>
             </div>
         </section>
 
@@ -285,10 +285,12 @@
         <div class="social-links">
             <a href="https://www.instagram.com/tac_argenliam/" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
             <button class="phone-btn" onclick="copyPhone()">(81) 98369-9051</button>
+            <button class="phone-btn" onclick="copyEmail()">tacargeliam@gmail.com</button>
         </div>
     </footer>
 
     <script>
+        /*Animações de entrada e animação da tela*/
         document.addEventListener('DOMContentLoaded', () => {
             const hero = document.querySelector('.hero');
             const form = document.querySelector('.form-container');
@@ -308,6 +310,7 @@
             }, 100);
         });
 
+        /*Formulário*/
         document.getElementById('form').addEventListener('submit', (e) => {
             e.preventDefault();
             const btn = document.querySelector('.btn');
@@ -334,8 +337,14 @@
             }
         });
 
+        /*Copia número com botão*/
         function copyPhone() {
             navigator.clipboard.writeText('(81) 98369-9051');
+        }
+
+        /*Copia Email com botão*/
+        function copyEmail() {
+            navigator.clipboard.writeText('tacargeliam@gmail.com');
         }
     </script>
 </body>
